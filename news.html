@@ -305,7 +305,6 @@
     }
 
     
-    /* 篩選器樣式 */
     .filter-container {
       display: flex;
       justify-content: center;
@@ -333,7 +332,7 @@
       color: white;
     }
     
-    /* 資訊卡片網格 - 修改為單列佈局 */
+
     .news-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -341,7 +340,7 @@
       margin: 40px 0;
     }
     
-    /* 新的卡片樣式 - 圖片和文字並排 */
+
     .news-card {
       background: white;
       border-radius: 15px;
@@ -349,7 +348,7 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       transition: var(--transition);
       display: flex;
-      height: 500px; /* 固定高度確保圖片顯示完整 */
+      height: 500px; 
     }
     
     .news-card:hover {
@@ -358,7 +357,7 @@
     }
     
     .news-image-container {
-      flex: 0 0 40%; /* 佔40%寬度 */
+      flex: 0 0 40%; 
       overflow: hidden;
       position: relative;
     }
@@ -366,13 +365,13 @@
     .news-image {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* 確保圖片完整顯示 */
+      object-fit: cover;
     }
     
     .news-content-container {
-      flex: 0 0 60%; /* 佔60%寬度 */
+      flex: 0 0 60%;
       padding: 25px;
-      overflow-y: auto; /* 內容過多時可滾動 */
+      overflow-y: auto;
     }
     
     .news-header {
@@ -471,7 +470,6 @@
       margin-top: 20px;
     }
     
-    /* 聯絡資訊卡片樣式 */
     .info-card {
       background: white;
       border-radius: 15px;
@@ -515,8 +513,7 @@
       margin-bottom: 5px;
       color: var(--bible-brown);
     }
-    
-    /* 响应式设计 */
+
     @media (max-width: 992px) {
       .news-card {
         flex-direction: column;
@@ -616,7 +613,6 @@
       .dropdown-menu.open { max-height: 800px; }
     }
     
-    /* 图片网格布局 */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -667,7 +663,6 @@
       transform: translateY(0);
     }
 
-    /* 模态框样式 */
     .modal {
       display: none;
       position: fixed;
@@ -760,8 +755,6 @@
     .modal-btn:hover {
       background: rgba(255, 255, 255, 0.3);
     }
-
-    /* 响应式调整 */
     @media (max-width: 992px) {
       .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -790,7 +783,6 @@
 </head>
 <body>
 
-  <!-- 导航栏 -->
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-logo">
@@ -833,7 +825,6 @@
     </div>
   </nav>
   
-  <!-- 英雄区域 -->
   <section class="hero">
     <div class="hero-content">
       <h1 class="hero-title">最新資訊</h1>
@@ -844,16 +835,13 @@
     <div class="container">
       <h2 class="section-title">最新活動與課程</h2>
       
-      <!-- 篩選按鈕 -->
       <div class="filter-container">
         <button class="filter-btn active" data-filter="all">全部資訊</button>
         <button class="filter-btn" data-filter="tutoring">補習中心</button>
         <button class="filter-btn" data-filter="church">教會資訊</button>
       </div>
       
-      <!-- 图片网格布局 -->
       <div class="gallery-grid">
-        <!-- 第一张图片 -->
         <div class="gallery-item" data-category="tutoring">
           <img src="image/news/AI_music.jpeg" alt="AI音樂創新坊：流行曲製作新世代" class="gallery-image">
           <div class="gallery-caption">
@@ -862,7 +850,6 @@
           </div>
         </div>
         
-        <!-- 第二张图片 -->
         <div class="gallery-item" data-category="tutoring">
           <img src="image/news/MIC_Art_Design.jpeg" alt="第二屆大灣區展能教育組裝房屋MIC美術設計創作比賽" class="gallery-image">
           <div class="gallery-caption">
@@ -870,8 +857,7 @@
             <p>第二屆大灣區展能教育組裝房屋MIC美術設計創作比賽</p>
           </div>
         </div>
-        
-        <!-- 第三张图片 -->
+
         <div class="gallery-item" data-category="tutoring">
           <img src="image/news/tutor.jpeg" alt="功課輔導班" class="gallery-image">
           <div class="gallery-caption">
@@ -880,7 +866,6 @@
           </div>
         </div>
       
-              <!-- 第三张图片 -->
         <div class="gallery-item" data-category="tutoring">
           <img src="image/news/Secondary chin class.JPG" alt="中文中學輔導班" class="gallery-image">
           <div class="gallery-caption">
@@ -889,7 +874,6 @@
           </div>
         </div>
       </div>
-      <!-- 模态框（点击图片放大显示） -->
       <div id="imageModal" class="modal">
         <span class="close-modal">&times;</span>
         <div class="modal-content">
@@ -1079,5 +1063,6 @@
   </script>
 </body>
 </html>
+
 
 
