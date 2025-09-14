@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="x-icon" href="image/yyfl-logo-122x149.png">
   <style>
-    /* 重置与基础样式 */
     * {
       margin: 0;
       padding: 0;
@@ -303,7 +302,6 @@
       text-shadow:0 3px 8px rgba(0,0,0,0.18) 
     }
 
-    /* 年份筛选器 */
     .year-filter {
       display: flex;
       justify-content: center;
@@ -332,7 +330,7 @@
       color: white;
     }
     
-    /* 年份标题 */
+
     .year-section {
       margin: 50px 0 30px;
       padding-bottom: 10px;
@@ -345,7 +343,6 @@
       color: var(--bible-brown);
     }
     
-    /* 活動區域 */
     .activity {
       max-width: 1100px;    
       margin: 18px auto;    
@@ -388,7 +385,6 @@
       border-top: 6px solid rgba(255,193,7,0.06);
     }
     
-    /* 活動描述 */
     .activity-description {
       padding: 15px;
       background-color: rgba(255, 248, 240, 0.7);
@@ -397,7 +393,6 @@
       border-left: 4px solid var(--faith-blue);
     }
     
-    /* 輪播區域 */
     .simple-carousel { 
       position:relative; 
       overflow:hidden; 
@@ -442,12 +437,12 @@
       object-fit: contain;
     }
     
-    /* YouTube 影片容器 */
+
     .youtube-container {
       position: relative;
       width: 100%;
       height: 0;
-      padding-bottom: 56.25%; /* 16:9 縱橫比 */
+      padding-bottom: 56.25%;
     }
     
     .youtube-container iframe {
@@ -498,7 +493,6 @@
       background:var(--sunrise-orange); 
     }
     
-    /* 頁腳 */
     .footer {
       background: linear-gradient(135deg, var(--bible-brown), #5a3921);
       color: #ecf0f1;
@@ -531,7 +525,6 @@
       margin-top: 20px;
     }
     
-    /* 响应式设计 */
     @media (max-width:1100px){
       .hamburger{display:flex;}
       .navbar-menu{
@@ -661,8 +654,6 @@
         margin: 5px 0;
       }
     }
-    
-    /* 在大於等於 1100px 時，讓選單靠右顯示 */
     @media (min-width: 1100px) {
       .navbar-container {
         display: flex;
@@ -681,7 +672,6 @@
   </style>
 </head>
 <body>
-  <!-- 导航栏 -->
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-logo">
@@ -724,7 +714,6 @@
     </div>
   </nav>
   
-  <!-- 英雄区域 -->
   <section class="hero">
     <div class="hero-content">
       <h1 class="hero-title">繼往開來</h1>
@@ -732,7 +721,6 @@
     </div>
   </section>
 
-  <!-- 年份筛选器 -->
   <div class="year-filter" id="yearFilter">
     <button class="year-btn active" data-year="all">所有年份</button>
     <button class="year-btn" data-year="2025">2025</button>
@@ -745,7 +733,6 @@
     <button class="year-btn" data-year="2017">2017</button>
   </div>
 
-  <!-- 活动内容区域 -->
   <div class="container">
     <!-- 2025年活动 -->
     <div class="year-section" data-year="2025">
@@ -774,13 +761,11 @@
             <img src="image/活動/端午節慈善活動/端午節_3.jpeg" alt="端午節慈善活動2">
           </div>
           <div class="sc-item">
-            <!-- 另一個YouTube影片示例 -->
             <div class="youtube-container">
               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lztjCYS1ZvM?si=Yje34TP2ghsfzsJB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
           <div class="sc-item">
-            <!-- 修正MP4视频显示 -->
             <video controls>
               <source src="image/活動/端午節慈善活動/陳光昇_4.41.mp4" type="video/mp4">
             </video>
@@ -1368,7 +1353,6 @@
     </div>
   </div>
 
-  <!-- 頁腳 -->
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
