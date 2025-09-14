@@ -268,8 +268,7 @@
   align-items: center;
   justify-content: flex-start; 
   padding: 60px 40px;
-  color: #fff;
-  /*background: url("image/hero_bg.jpg") center right / cover no-repeat; */  
+  color: #fff; 
   overflow: hidden;
   background-size: cover;
   background-position: center right; 
@@ -650,8 +649,7 @@
   .nav-item.has-dropdown > .nav-link .caret{float:right;transform:rotate(0);transition:transform .2s;}
   .nav-item.has-dropdown.open > .nav-link .caret{transform:rotate(180deg);}
 }
-    
-/* 大合照区域样式 */
+
     .team-photo-section {
       padding: 40px 0;
       background-color: var(--warm-beige);
@@ -676,8 +674,7 @@
       font-style: italic;
       margin-top: 10px;
     }
-    
-    /* 调整顾问团队卡片宽度 */
+
     .dept-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -685,20 +682,17 @@
       margin: 50px 0;
     }
     
-    /* 顾问团队卡片单独设置宽度 */
     .dept-card.tertiary {
-      grid-column: 1 / -1; /* 跨越所有列 */
+      grid-column: 1 / -1; 
       max-width: 100%;
     }
     
-    /* 调整顾问团队内部布局 */
     .advisor-content {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-    
-    /* 团队成员照片展示区样式 */
+
     .team-members-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -753,7 +747,6 @@
       font-size: 0.9rem;
     }
     
-    /* 照片区域标题 */
     .photo-section-title {
       text-align: center;
       margin: 50px 0 30px;
@@ -879,7 +872,6 @@
       
       .navbar-menu .nav-item { margin: 0 6px; }
     }
-    /* 新增樣式：團隊成員詳細資料 */
     .member-detail-toggle {
       display: inline-block;
       margin-top: 15px;
@@ -944,7 +936,6 @@
       font-size: 1.5rem;
     }
     
-    /* 模態框樣式 */
     .modal {
       display: none;
       position: fixed;
@@ -1018,30 +1009,12 @@
         <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">服務 <span class="caret">▾</span></a>
         <div class="dropdown-menu" data-dropdown="services">
           <a class="dropdown-item" href="services-overview.html">服務概覽</a>
-          <!--
+          --
           <a class="dropdown-item" href="foundation-services.html">基金會轄下服務</a>
         -->
           <a class="dropdown-item" href="yanyou-tutoring.html">恩祐補習中心項目</a>
         </div>
       </div>
-<!--
-      <div class="nav-item has-dropdown" data-menu="org">
-        <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">組織與治理 <span class="caret">▾</span></a>
-        <div class="dropdown-menu" data-dropdown="org">
-          <a class="dropdown-item" href="org-chart.html">組織架構極</a>
-          <a class="dropdown-item" href="executive-committee.html">執行及管理委員會</a>
-          <a class="dropdown-item" href="board-members.html">董事會成員</a>
-        </div>
-      </div>
-
-      <div class="nav-item has-dropdown data-menu="advisors">
-        <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">顧問與牧師 <span class="caret">▾</span></a>
-        <div class="dropdown-menu" data-dropdown="advisors">
-          <a class="dropdown-item" href="advisors.html">顧問團隊</a>
-          <a class="dropdown-item" href="Consultant_Paster.html">顧問牧師團隊</>
-        </div>
-      </div>
--->
         <div class="nav-item"><a class="nav-link" href="org.html" >組織架構</a></div>
         <div class="nav-item"><a class="nav-link" href="events.html">繼往開來</a></div>
         <div class="nav-item"><a class="nav-link" href="Solicitation_Area.html">徵求區</a></div>
@@ -1072,7 +1045,6 @@
 
       <div class="team-details-side">
         <div class="dept-grid">
-          <!-- 董事會卡片 -->
           <div class="dept-card">
             <div class="dept-icon">
               <i class="fas fa-users"></i>
@@ -1087,7 +1059,7 @@
             </ul>
           </div>
           
-          <!-- 執行委員會卡片 -->
+
           <div class="dept-card secondary">
             <div class="dept-icon">
               <i class="fas fa-tasks"></i>
@@ -1101,7 +1073,7 @@
           </div>
         </div>
         
-        <!-- 团队成员照片展示区 -->
+
         <div class="team-members-grid">
           <!-- 陳光昇 -->
           <div class="team-member-card">
@@ -1212,7 +1184,6 @@
     </div>
   </section>
   
-  <!-- 陳光昇模態框 -->
   <div id="rayChanModal" class="modal">
     <div class="modal-content">
       <button class="close-modal" onclick="closeModal('rayChanModal')">&times;</button>
@@ -1248,7 +1219,6 @@
     </div>
   </div>
   
-  <!-- 羅恩慈模態框 -->
   <div id="mercyModal" class="modal">
     <div class="modal-content">
       <button class="close-modal" onclick="closeModal('mercyModal')">&times;</button>
@@ -1281,8 +1251,7 @@
       </div>
     </div>
   </div>
-  
-  <!-- 陳景潮模態框 -->
+
   <div id="jacobModal" class="modal">
     <div class="modal-content">
       <button class="close-modal" onclick="closeModal('jacobModal')">&times;</button>
@@ -1312,7 +1281,7 @@
     </div>
   </div>
   
-  <!-- 黎振國模態框 -->
+
   <div id="lawrenceModal" class="modal">
     <div class="modal-content">
       <button class="close-modal" onclick="closeModal('lawrenceModal')">&times;</button>
@@ -1340,7 +1309,6 @@
     </div>
   </div>
   
-  <!-- 張茶香模態框 -->
   <div id="zhangModal" class="modal">
     <div class="modal-content">
       <button class="close-modal" onclick="closeModal('zhangModal')">&times;</button>
@@ -1402,15 +1370,14 @@
     });
      function openModal(modalId) {
       document.getElementById(modalId).style.display = 'block';
-      document.body.style.overflow = 'hidden'; // 防止背景滾動
+      document.body.style.overflow = 'hidden'; 
     }
     
     function closeModal(modalId) {
       document.getElementById(modalId).style.display = 'none';
-      document.body.style.overflow = 'auto'; // 恢復滾動
+      document.body.style.overflow = 'auto';
     }
     
-    // 點擊模態框外部關閉
     window.onclick = function(event) {
       const modals = document.getElementsByClassName('modal');
       for (let i = 0; i < modals.length; i++) {
@@ -1423,3 +1390,4 @@
   </script>
 </body>
 </html>
+
