@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <style>
+<style>
     * {
       margin: 0;
       padding: 0;
@@ -17,26 +17,26 @@
     }
     
     :root {
-      --sunrise-orange: #FF9800;
-      --sunshine-yellow: #FFC107;
+      --sunrise-orange: #BEEFFF;
+      --sunshine-yellow: #E9F8FF;
       --coral-pink: #FF7F50;
-      --warm-beige: #FFF8F0;
+      --warm-beige: #FBFEFF;
       --faith-blue: #4A7B9F;
-      --bible-brown: #8B4513;
-      --hope-green: #8BC34A;
+      --bible-brown: #5A7F89;
+      --hope-green: #D6F1FB;
       --love-red: #E64A19;
       --light-gold: #FFD700;
       --white: #ffffff;
-      --text: #333333;
-      --text-gray: #666666;
-      --shadow: 0 8px 20px rgba(255, 152, 0, 0.15);
+      --text: #3A5560;
+      --text-gray: #7B989D;
+      --shadow: 0 8px 20px rgba(33,150,243,0.06);
       --transition: all 0.3s ease;
     }
     
     body {
       font-family: 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
       color: var(--text);
-      background: linear-gradient(135deg, #fff9f0 0%, #fff4e6 100%);
+      background: #e9f6fa;
       background-attachment: fixed;
       line-height: 1.7;
       padding-top: 80px;
@@ -46,7 +46,7 @@
     h1, h2, h3, h4, h5 {
       font-family: 'Playfair Display', 'Times New Roman', serif;
       font-weight: 700;
-      color: var(--bible-brown);
+      color: var(--text);
       position: relative;
     }
     
@@ -99,7 +99,7 @@
     
     .btn {
       display: inline-block;
-      background: linear-gradient(135deg, var(--sunrise-orange), var(--love-red));
+      background: var(--faith-blue);
       color: white;
       padding: 15px 35px;
       border-radius: 50px;
@@ -116,9 +116,10 @@
     }
     
     .btn:hover {
-      background: linear-gradient(135deg, var(--love-red), var(--bible-brown));
+      background: linear-gradient(135deg, var(--hope-green), #7ecff7);
       transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(230, 74, 25, 0.7);
+      box-shadow: 0 12px 30px rgba(3,169,244,0.15);
+      color: var(--text);
     }
     
     .btn:after {
@@ -204,7 +205,7 @@
     }
     
     .nav-link:hover {
-      background: rgba(255, 193, 7, 0.08);
+      background: rgba(33,150,243,0.03);
     }
     
     .dropdown-menu{
@@ -269,11 +270,9 @@
       align-items: center;
       justify-content: flex-start; 
       padding: 60px 40px;
-      color: #fff;
+      color: var(--text);
       overflow: hidden;
-      background-size: cover;
-      background-position: center right; 
-      background-repeat: no-repeat;
+      background: linear-gradient(135deg, rgba(190,239,255,0.95) 0%, rgba(214,241,251,0.85) 100%);
       background-blend-mode: overlay;
     }
     
@@ -281,7 +280,7 @@
       content:"";  
       position:absolute; 
       inset:0;    
-      background: linear-gradient(90deg, rgba(255,148,50,0.95) 0%, rgba(255,120,70,0.85) 35%, rgba(255,120,70,0.45) 100%);  
+      background: linear-gradient(90deg, rgba(190,239,255,0.7) 0%, rgba(173,216,230,0.6) 35%, rgba(173,216,230,0.4) 100%);  
       z-index:1;
     }
     
@@ -295,13 +294,13 @@
       font-size: clamp(2rem,4vw,4rem); 
       margin:0 0 .5rem; 
       font-weight:800; 
-      text-shadow:0 6px 14px rgba(0,0,0,0.25) 
+      text-shadow:0 6px 14px rgba(0,0,0,0.06);
     }
     
     .hero-subtitle{ 
       font-size: clamp(1rem,2.2vw,1.2rem); 
       opacity:.95; 
-      text-shadow:0 3px 8px rgba(0,0,0,0.18) 
+      text-shadow:0 3px 8px rgba(0,0,0,0.06);
     }
 
     
@@ -345,7 +344,7 @@
       background: white;
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: var(--shadow);
       transition: var(--transition);
       display: flex;
       height: 500px; 
@@ -353,7 +352,7 @@
     
     .news-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(255, 152, 0, 0.2);
+      box-shadow: 0 15px 40px rgba(33, 150, 243, 0.2);
     }
     
     .news-image-container {
@@ -375,7 +374,7 @@
     }
     
     .news-header {
-      color: rgb(0, 0, 0);
+      color: var(--text);
       padding-bottom: 20px;
       text-align: left;
       border-bottom: 2px solid var(--sunshine-yellow);
@@ -399,7 +398,7 @@
     }
     
     .news-detail i {
-      color: var(--sunrise-orange);
+      color: var(--faith-blue);
       margin-right: 10px;
       min-width: 20px;
       text-align: center;
@@ -407,7 +406,7 @@
     }
     
     .news-highlight {
-      background: rgba(255, 193, 7, 0.1);
+      background: rgba(233, 248, 255, 0.3);
       border-left: 4px solid var(--sunshine-yellow);
       padding: 15px;
       border-radius: 8px;
@@ -415,7 +414,7 @@
     }
     
     .bank-info {
-      background: linear-gradient(to right, #fff8f0, #ffffff);
+      background: linear-gradient(to right, var(--warm-beige), #ffffff);
       border-radius: 10px;
       padding: 25px;
       margin: 30px 0;
@@ -440,8 +439,8 @@
     }
     
     .footer {
-      background: linear-gradient(135deg, var(--bible-brown), #5a3921);
-      color: #ecf0f1;
+      background: linear-gradient(135deg, #2b5560, #1b3b42);
+      color: #eefafc;
       padding: 50px 0 20px;
     }
     
@@ -475,7 +474,7 @@
       border-radius: 15px;
       padding: 30px;
       margin-top: 50px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: var(--shadow);
     }
     
     .info-title {
@@ -497,7 +496,7 @@
     }
     
     .info-icon {
-      background: var(--sunshine-yellow);
+      background: var(--faith-blue);
       color: white;
       width: 50px;
       height: 50px;
@@ -511,7 +510,7 @@
     
     .info-text h4 {
       margin-bottom: 5px;
-      color: var(--bible-brown);
+      color: var(--text);
     }
 
     @media (max-width: 992px) {
@@ -624,7 +623,7 @@
       position: relative;
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow);
       transition: all 0.4s ease;
       background: white;
       height: 300px;
@@ -633,7 +632,7 @@
 
     .gallery-item:hover {
       transform: translateY(-8px);
-      box-shadow: 0 15px 35px rgba(255, 152, 0, 0.25);
+      box-shadow: 0 15px 35px rgba(33, 150, 243, 0.25);
     }
 
     .gallery-image {
