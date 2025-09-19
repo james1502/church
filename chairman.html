@@ -7,7 +7,7 @@
   <title>主席的話 - 恩祐（深水埗堂）基金會</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="x-icon" href="image/yyfl-logo-122x149.png">
-  <style>
+<style>
     * {
       margin: 0;
       padding: 0;
@@ -15,26 +15,26 @@
     }
     
     :root {
-      --sunrise-orange: #FF9800;
-      --sunshine-yellow: #FFC107;
+      --sunrise-orange: #BEEFFF;
+      --sunshine-yellow: #E9F8FF;
       --coral-pink: #FF7F50;
-      --warm-beige: #FFF8F0;
+      --warm-beige: #FBFEFF;
       --faith-blue: #4A7B9F;
-      --bible-brown: #8B4513;
-      --hope-green: #8BC34A;
+      --bible-brown: #5A7F89;
+      --hope-green: #D6F1FB;
       --love-red: #E64A19;
       --light-gold: #FFD700;
       --white: #ffffff;
-      --text: #333333;
-      --text-gray: #666666;
-      --shadow: 0 8px 20px rgba(255, 152, 0, 0.15);
+      --text: #3A5560;
+      --text-gray: #7B989D;
+      --shadow: 0 8px 20px rgba(33,150,243,0.06);
       --transition: all 0.3s ease;
     }
     
     body {
       font-family: 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
       color: var(--text);
-      background: linear-gradient(135deg, #fff9f0 0%, #fff4e6 100%);
+      background: #e9f6fa;
       background-attachment: fixed;
       line-height: 1.7;
       padding-top: 80px;
@@ -44,7 +44,7 @@
     h1, h2, h3, h4, h5 {
       font-family: 'Playfair Display', 'Times New Roman', serif;
       font-weight: 700;
-      color: var(--bible-brown);
+      color: var(--text);
       position: relative;
     }
     
@@ -73,6 +73,7 @@
       margin-bottom: 50px;
       position: relative;
       padding-bottom: 20px;
+      color: var(--text);
     }
     
     .section-title:after {
@@ -97,7 +98,7 @@
     
     .btn {
       display: inline-block;
-      background: linear-gradient(135deg, var(--sunrise-orange), var(--love-red));
+      background: #477d8d;
       color: white;
       padding: 15px 35px;
       border-radius: 50px;
@@ -114,9 +115,10 @@
     }
     
     .btn:hover {
-      background: linear-gradient(135deg, var(--love-red), var(--bible-brown));
+      background: linear-gradient(135deg, var(--hope-green), #7ecff7);
       transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(230, 74, 25, 0.7);
+      box-shadow: 0 12px 30px rgba(3,169,244,0.15);
+      color: var(--text);
     }
     
     .btn:after {
@@ -202,7 +204,7 @@
     }
     
     .nav-link:hover {
-      background: rgba(255, 193, 7, 0.08);
+      background: rgba(33,150,243,0.03);
     }
     
     .dropdown-menu{
@@ -267,20 +269,17 @@
       align-items: center;
       justify-content: flex-start; 
       padding: 60px 40px;
-      color: #fff;
-      /*background: url("image/hero_bg.jpg") center right / cover no-repeat; */  
       overflow: hidden;
-      background-size: cover;
-      background-position: center right; 
-      background-repeat: no-repeat;
-      background-blend-mode: overlay;
+      background: linear-gradient(135deg, rgba(190,239,255,0.95) 0%, rgba(214,241,251,0.85) 100%);
+      color: var(--text);
+      text-shadow: 0 6px 14px rgba(0,0,0,0.06);
     }
     
     .hero:before {
       content:"";  
       position:absolute; 
       inset:0;    
-      background: linear-gradient(90deg, rgba(255,148,50,0.95) 0%, rgba(255,120,70,0.85) 35%, rgba(255,120,70,0.45) 100%);  
+      background: linear-gradient(90deg, rgba(190,239,255,0.7) 0%, rgba(173,216,230,0.6) 35%, rgba(173,216,230,0.4) 100%);  
       z-index:1;
     }
     
@@ -294,13 +293,15 @@
       font-size: clamp(2rem,4vw,4rem); 
       margin:0 0 .5rem; 
       font-weight:800; 
-      text-shadow:0 6px 14px rgba(0,0,0,0.25) 
+      text-shadow:0 6px 14px rgba(0,0,0,0.06);
+      color: var(--text);
     }
     
     .hero-subtitle{ 
       font-size: clamp(1rem,2.2vw,1.2rem); 
       opacity:.95; 
-      text-shadow:0 3px 8px rgba(0,0,0,0.18) 
+      text-shadow:0 3px 8px rgba(0,0,0,0.06);
+      color: var(--text);
     }
 
     .profile-section {
@@ -312,11 +313,11 @@
       gap: 40px;
       align-items: flex-start;   
       justify-content: flex-start; 
-      background: linear-gradient(180deg, #fffaf3, #fff6ee);
+      background: linear-gradient(180deg, #f6fdff, #e9f6fa);
       border-radius: 20px;
       padding: 40px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-      border: 1px solid rgba(255,152,0,0.15);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(190, 239, 255, 0.5);
       position: relative;
       overflow: hidden;
     }
@@ -328,7 +329,7 @@
       left: 0;
       right: 0;
       height: 5px;
-      background: linear-gradient(90deg, var(--sunrise-orange), var(--love-red));
+      background: linear-gradient(90deg, var(--faith-blue), var(--hope-green));
     }
 
     .profile-img-container {
@@ -342,14 +343,14 @@
       height: auto;
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      box-shadow: var(--shadow);
       border: 5px solid rgba(255,255,255,0.8);
       transition: var(--transition);
     }
 
     .profile-img:hover {
       transform: translateY(-5px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+      box-shadow: 0 18px 40px rgba(33, 150, 243, 0.2);
     }
 
     .profile-img img {
@@ -363,19 +364,17 @@
     .profile-img:hover img { 
       transform: scale(1.05); 
     }
-
-    /* 头衔列表样式优化 */
     .titles-container {
       margin-top: 25px;
-      background: rgba(255, 248, 240, 0.9);
+      background: rgba(251, 254, 255, 0.9);
       border-radius: 12px;
       padding: 25px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-      border: 1px solid rgba(139, 69, 19, 0.1);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(90, 127, 137, 0.1);
       max-height: 450px;
       overflow-y: auto;
       scrollbar-width: thin;
-      scrollbar-color: var(--sunrise-orange) transparent;
+      scrollbar-color: var(--faith-blue) transparent;
     }
 
     .titles-container::-webkit-scrollbar {
@@ -383,13 +382,13 @@
     }
 
     .titles-container::-webkit-scrollbar-thumb {
-      background-color: var(--sunrise-orange);
+      background-color: var(--faith-blue);
       border-radius: 3px;
     }
     
     .titles-container h5 {
       font-size: 1.2rem;
-      color: var(--bible-brown);
+      color: var(--text);
       margin-bottom: 20px;
       padding-bottom: 10px;
       border-bottom: 2px solid var(--sunshine-yellow);
@@ -405,7 +404,7 @@
       transform: translateX(-50%);
       width: 60px;
       height: 3px;
-      background: var(--love-red);
+      background: var(--faith-blue);
     }
     
     .titles-list {
@@ -416,13 +415,13 @@
       position: relative;
       padding: 12px 0 12px 40px;
       margin-bottom: 10px;
-      color: var(--text-gray);
-      border-bottom: 1px dashed rgba(139, 69, 19, 0.2);
+      color: var(--text);
+      border-bottom: 1px dashed rgba(90, 127, 137, 0.2);
       transition: var(--transition);
     }
     
     .titles-list li:hover {
-      background-color: rgba(255, 193, 7, 0.1);
+      background-color: rgba(233, 248, 255, 0.3);
       padding-left: 45px;
     }
     
@@ -432,7 +431,7 @@
       left: 15px;
       top: 50%;
       transform: translateY(-50%);
-      color: var(--sunrise-orange);
+      color: var(--faith-blue);
       font-size: 2rem;
       font-weight: bold;
     }
@@ -451,7 +450,7 @@
     .profile-title {
       font-size: clamp(1.5rem, 3vw, 2rem);
       margin: 0 0 10px;
-      color: var(--bible-brown);
+      color: var(--text);
       font-weight: 800;
       position: relative;
       padding-bottom: 15px;
@@ -464,12 +463,12 @@
       left: 0;
       width: 80px;
       height: 4px;
-      background: linear-gradient(90deg, var(--sunrise-orange), var(--love-red));
+      background: linear-gradient(90deg, var(--faith-blue), var(--hope-green));
       border-radius: 2px;
     }
     
     .profile-subtitle {
-      color: var(--love-red);
+      color: var(--faith-blue);
       font-weight: 700;
       margin-bottom: 20px;
       font-size: 1.2rem;
@@ -477,20 +476,20 @@
     }
     
     .profile-text {
-      color: var(--text-gray);
+      color: var(--text);
       line-height: 1.85;
       font-size: 1.05rem;
     }
 
     .article-content {
-      background: linear-gradient(180deg,#fff,#fffef9);
+      background: linear-gradient(180deg, #ffffff, #f8feff);
       border-radius: 16px;
       padding: 35px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-      color: var(--text-gray);
+      box-shadow: var(--shadow);
+      color: var(--text);
       line-height: 1.9;
       font-size: 1.05rem;
-      border: 1px solid rgba(0,0,0,0.05);
+      border: 1px solid rgba(190, 239, 255, 0.3);
       position: relative;
     }
 
@@ -500,14 +499,14 @@
       top: 20px;
       left: 20px;
       font-size: 5rem;
-      color: rgba(255, 193, 7, 0.2);
+      color: rgba(233, 248, 255, 0.3);
       font-family: 'Playfair Display', serif;
       line-height: 1;
     }
     
     .footer {
-      background: linear-gradient(135deg, var(--bible-brown), #5a3921);
-      color: #ecf0f1;
+      background: linear-gradient(135deg, #2b5560, #1b3b42);
+      color: #eefafc;
       padding: 60px 0 25px;
       margin-top: 60px;
     }
@@ -546,7 +545,6 @@
       opacity: 0.9;
     }
     
-    /* 响应式设计 */
     @media (max-width: 1285px) {
       .hamburger { display: flex; }
       .navbar-menu{
@@ -694,7 +692,6 @@
       .profile-img-container { flex: 0 0 320px; }
     }
     
-    /* 动画效果 */
     @keyframes fadeInUp {
       from {
         opacity: 0;
