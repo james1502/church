@@ -6,8 +6,7 @@
   <title>徵求區 - 恩祐（深水埗堂）基金會</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="x-icon" href="image/yyfl-logo-122x149.png">
-  <style>
-    
+<style>
     * {
       margin: 0;
       padding: 0;
@@ -15,26 +14,26 @@
     }
     
     :root {
-      --sunrise-orange: #FF9800;
-      --sunshine-yellow: #FFC107;
+      --sunrise-orange: #BEEFFF;
+      --sunshine-yellow: #E9F8FF;
       --coral-pink: #FF7F50;
-      --warm-beige: #FFF8F0;
+      --warm-beige: #FBFEFF;
       --faith-blue: #4A7B9F;
-      --bible-brown: #8B4513;
-      --hope-green: #8BC34A;
+      --bible-brown: #5A7F89;
+      --hope-green: #D6F1FB;
       --love-red: #E64A19;
       --light-gold: #FFD700;
       --white: #ffffff;
-      --text: #333333;
-      --text-gray: #666666;
-      --shadow: 0 8px 20px rgba(255, 152, 0, 0.15);
+      --text: #3A5560;
+      --text-gray: #7B989D;
+      --shadow: 0 8px 20px rgba(33,150,243,0.06);
       --transition: all 0.3s ease;
     }
     
     body {
       font-family: 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
       color: var(--text);
-      background: linear-gradient(135deg, #fff9f0 0%, #fff4e6 100%);
+      background: #e9f6fa;
       background-attachment: fixed;
       line-height: 1.7;
       padding-top: 80px;
@@ -44,7 +43,7 @@
     h1, h2, h3, h4, h5 {
       font-family: 'Playfair Display', 'Times New Roman', serif;
       font-weight: 700;
-      color: var(--bible-brown);
+      color: var(--text);
       position: relative;
     }
     
@@ -73,6 +72,7 @@
       margin-bottom: 50px;
       position: relative;
       padding-bottom: 20px;
+      color: var(--text);
     }
     
     .section-title:after {
@@ -97,7 +97,7 @@
     
     .btn {
       display: inline-block;
-      background: linear-gradient(135deg, var(--sunrise-orange), var(--love-red));
+      background: #477d8d;
       color: white;
       padding: 15px 35px;
       border-radius: 50px;
@@ -114,9 +114,10 @@
     }
     
     .btn:hover {
-      background: linear-gradient(135deg, var(--love-red), var(--bible-brown));
+      background: linear-gradient(135deg, var(--hope-green), #7ecff7);
       transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(230, 74, 25, 0.7);
+      box-shadow: 0 12px 30px rgba(3,169,244,0.15);
+      color: var(--text);
     }
     
     .btn:after {
@@ -142,7 +143,6 @@
       75% { transform: translateY(-50%) scale(1.2); }
       100% { transform: translateY(-50%) scale(1); }
     }
-    
     
     .navbar{
       position: fixed;
@@ -181,64 +181,64 @@
       text-decoration:none;
     }
     
-  .navbar-menu{
-    display:flex;
-    align-items:center;
-    gap:6px;
-  }
+    .navbar-menu{
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    
     .nav-item {
       position: relative;
       margin: 0 10px;
     }
     
-.nav-link{
-  display:inline-block;
-  padding:8px 12px;
-  font-weight:500;
-  color:#222;
-  text-decoration:none;
-  border-radius:6px;
-  transition:var(--transition);
-}
-    .nav-link:hover {
-      background: rgba(255, 193, 7, 0.08);
+    .nav-link{
+      display:inline-block;
+      padding:8px 12px;
+      font-weight:500;
+      color:#222;
+      text-decoration:none;
+      border-radius:6px;
+      transition:var(--transition);
     }
     
-
-.dropdown-menu{
-  position:absolute;
-  top:100%;
-  left:0;
-  background:#fff;
-  min-width:220px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.12);
-  border-radius:8px;
-  padding:6px 0;
-  opacity:0;
-  visibility:hidden;
-  transform:translateY(8px);
-  transition:var(--transition);
-  z-index:200;
-}
-.dropdown-item{
-  padding:10px 16px;
-  display:block;
-  color:#333;
-  text-decoration:none;
-  transition:var(--transition);
-}
-.dropdown-item:hover{background:rgba(255,193,7,0.08);padding-left:20px;}
-.nav-item.has-dropdown:hover > .dropdown-menu{
-  opacity:1;
-  visibility:visible;
-  transform:translateY(0);
-}
-
+    .nav-link:hover {
+      background: rgba(33,150,243,0.03);
+    }
     
-    .nav-item:hover .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
+    .dropdown-menu{
+      position:absolute;
+      top:100%;
+      left:0;
+      background:#fff;
+      min-width:220px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.12);
+      border-radius:8px;
+      padding:6px 0;
+      opacity:0;
+      visibility:hidden;
+      transform:translateY(8px);
+      transition:var(--transition);
+      z-index:200;
+    }
+    
+    .dropdown-item{
+      padding:10px 16px;
+      display:block;
+      color:#333;
+      text-decoration:none;
+      transition:var(--transition);
+    }
+    
+    .dropdown-item:hover{
+      background:rgba(255,193,7,0.08);
+      padding-left:20px;
+    }
+    
+    .nav-item.has-dropdown:hover > .dropdown-menu{
+      opacity:1;
+      visibility:visible;
+      transform:translateY(0);
     }
     
     .hamburger {
@@ -259,33 +259,26 @@
       transition: var(--transition);
     }
     
-    
-.hero{
-  position: relative;
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; 
-  padding: 60px 40px;
-  color: #fff;
-  background: url("image/hero_bg.jpg") center right / cover no-repeat;  
-  overflow: hidden;
-  background-size: cover;
-  background-position: center right; 
-  background-repeat: no-repeat;
-
-  
-  background-blend-mode: overlay;
-}
-    
-    .hero:before {
-    content:"";  
-    position:absolute; 
-    inset:0;    
-    background: linear-gradient(90deg, rgba(255,148,50,0.95) 0%, rgba(255,120,70,0.85) 35%, rgba(255,120,70,0.45) 100%);  
-    z-index:1;
+    .hero{
+      position: relative;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; 
+      padding: 60px 40px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(190,239,255,0.95) 0%, rgba(214,241,251,0.85) 100%);
+      color: var(--text);
+      text-shadow: 0 6px 14px rgba(0,0,0,0.06);
     }
     
+    .hero:before {
+      content:"";  
+      position:absolute; 
+      inset:0;    
+      background: linear-gradient(90deg, rgba(190,239,255,0.7) 0%, rgba(173,216,230,0.6) 35%, rgba(173,216,230,0.4) 100%);  
+      z-index:1;
+    }
     
     .hero-content{ 
       position: relative; 
@@ -293,19 +286,20 @@
       max-width: 1100px; 
     }
       
-  
     .hero-title{ 
       font-size: clamp(2rem,4vw,4rem); 
       margin:0 0 .5rem; 
       font-weight:800; 
-      text-shadow:0 6px 14px rgba(0,0,0,0.25) 
+      text-shadow:0 6px 14px rgba(0,0,0,0.06);
+      color: var(--text);
     }
+    
     .hero-subtitle{ 
       font-size: clamp(1rem,2.2vw,1.2rem); 
       opacity:.95; 
-      text-shadow:0 3px 8px rgba(0,0,0,0.18) 
+      text-shadow:0 3px 8px rgba(0,0,0,0.06);
+      color: var(--text);
     }
-
     
     .donation-categories {
       display: grid;
@@ -318,22 +312,22 @@
       background: var(--warm-beige);
       border-radius: 15px;
       padding: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow);
       transition: var(--transition);
       position: relative;
       overflow: hidden;
-      border: 1px solid rgba(255, 152, 0, 0.2);
+      border: 1px solid rgba(190, 239, 255, 0.5);
       z-index: 1;
     }
     
     .category-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(255, 152, 0, 0.2);
+      box-shadow: 0 20px 40px rgba(33, 150, 243, 0.2);
     }
     
     .category-icon {
       font-size: 3rem;
-      color: var(--sunrise-orange);
+      color: var(--faith-blue);
       text-align: center;
       margin-bottom: 20px;
       transition: var(--transition);
@@ -341,7 +335,7 @@
     
     .category-card:hover .category-icon {
       transform: scale(1.2);
-      color: var(--love-red);
+      color: var(--faith-blue);
     }
     
     .category-title {
@@ -349,6 +343,7 @@
       margin-bottom: 20px;
       position: relative;
       padding-bottom: 10px;
+      color: var(--text);
     }
     
     .category-title:after {
@@ -367,6 +362,7 @@
       position: relative;
       padding-left: 30px;
       margin-bottom: 12px;
+      color: var(--text);
     }
     
     .category-items li:before {
@@ -374,22 +370,21 @@
       position: absolute;
       left: 0;
       top: 0;
-      color: var(--love-red);
+      color: var(--faith-blue);
       font-weight: bold;
     }
     
     .urgent-item {
-      color: var(--love-red);
+      color: var(--faith-blue);
       font-weight: 600;
     }
     
-    
     .notice-box {
-      background: linear-gradient(to right, #fff8f0, #ffffff);
+      background: linear-gradient(to right, #f8feff, #ffffff);
       border-left: 4px solid var(--sunshine-yellow);
       border-radius: 10px;
       padding: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow);
       margin-bottom: 50px;
     }
     
@@ -397,6 +392,7 @@
       margin-bottom: 20px;
       position: relative;
       padding-bottom: 10px;
+      color: var(--text);
     }
     
     .notice-title:after {
@@ -412,13 +408,12 @@
     
     .notice-content p {
       margin-bottom: 15px;
-      color: var(--text-gray);
+      color: var(--text);
     }
     
     .notice-content strong {
-      color: var(--bible-brown);
+      color: var(--text);
     }
-    
     
     .donation-methods {
       display: grid;
@@ -431,19 +426,21 @@
       background: white;
       border-radius: 15px;
       padding: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow);
       transition: var(--transition);
+      border: 1px solid rgba(33,150,243,0.04);
     }
     
     .method-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(255, 152, 0, 0.2);
+      box-shadow: 0 15px 40px rgba(33, 150, 243, 0.2);
     }
     
     .method-title {
       margin-bottom: 20px;
       position: relative;
       padding-bottom: 10px;
+      color: var(--text);
     }
     
     .method-title:after {
@@ -459,16 +456,16 @@
     
     .method-content p {
       margin-bottom: 15px;
-      color: var(--text-gray);
+      color: var(--text);
     }
-    
     
     .donation-process {
       background: white;
       border-radius: 15px;
       padding: 40px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow);
       margin-bottom: 50px;
+      border: 1px solid rgba(33,150,243,0.04);
     }
     
     .process-grid {
@@ -484,26 +481,26 @@
     
     .process-icon {
       font-size: 2.5rem;
-      color: var(--sunrise-orange);
+      color: var(--faith-blue);
       margin-bottom: 15px;
       transition: var(--transition);
     }
     
     .process-step:hover .process-icon {
       transform: scale(1.2);
-      color: var(--love-red);
+      color: var(--faith-blue);
     }
     
     .process-title {
       font-size: 1.2rem;
       margin-bottom: 10px;
+      color: var(--text);
     }
     
     .process-desc {
-      color: var(--text-gray);
+      color: var(--text);
       font-size: 0.95rem;
     }
-    
     
     .donation-support {
       display: grid;
@@ -516,19 +513,21 @@
       background: white;
       border-radius: 15px;
       padding: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow);
       transition: var(--transition);
+      border: 1px solid rgba(33,150,243,0.04);
     }
     
     .support-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(255, 152, 0, 0.2);
+      box-shadow: 0 15px 40px rgba(33, 150, 243, 0.2);
     }
     
     .support-title {
       margin-bottom: 20px;
       position: relative;
       padding-bottom: 10px;
+      color: var(--text);
     }
     
     .support-title:after {
@@ -546,7 +545,7 @@
       position: relative;
       padding-left: 30px;
       margin-bottom: 12px;
-      color: var(--text-gray);
+      color: var(--text);
     }
     
     .support-content li:before {
@@ -554,33 +553,33 @@
       position: absolute;
       left: 0;
       top: 0;
-      color: var(--sunrise-orange);
+      color: var(--faith-blue);
       font-weight: bold;
       font-size: 1.5rem;
     }
-    
     
     .btn-container {
       text-align: center;
       margin: 50px 0;
     }
-        .mission-section {
+    
+    .mission-section {
       padding: 60px 0;
-      background: linear-gradient(180deg, #fffaf3, #fff6ee);
+      background: linear-gradient(180deg, #f6fdff, #e9f6fa);
     }
     
     .mission-card {
       background: white;
       border-radius: 16px;
       padding: 40px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      box-shadow: var(--shadow);
       margin-bottom: 40px;
-      border: 1px solid rgba(255,152,0,0.12);
+      border: 1px solid rgba(190, 239, 255, 0.5);
     }
     
     .mission-title {
       font-size: clamp(1.5rem, 2.8vw, 2.2rem);
-      color: var(--bible-brown);
+      color: var(--text);
       font-weight: 800;
       margin-bottom: 20px;
       text-align: center;
@@ -593,7 +592,7 @@
       position: absolute;
       bottom: 0;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-50);
       width: 80px;
       height: 4px;
       background: var(--sunshine-yellow);
@@ -602,18 +601,19 @@
     
     .mission-subtitle {
       text-align: center;
-      color: var(--text-gray);
+      color: var(--text);
       max-width: 800px;
       margin: 0 auto 40px;
       font-size: 1.1rem;
     }
     
     .mission-content {
-      color: var(--text-gray);
+      color: var(--text);
       line-height: 1.85;
       font-size: 1.05rem;
     }
-        .mission-list {
+    
+    .mission-list {
       margin: 30px 0;
       padding-left: 20px;
     }
@@ -622,19 +622,9 @@
       position: relative;
       padding-left: 30px;
       margin-bottom: 20px;
-      color: var(--text-gray);
+      color: var(--text);
       line-height: 1.7;
     }
-    
-    /*.mission-list li:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      top: 1;
-      color: var(--sunrise-orange);
-      font-weight: bold;
-      font-size: 1.8rem;
-    }*/
     
     .logo-explanation {
       display: flex;
@@ -655,7 +645,7 @@
       max-width: 100%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: var(--shadow);
     }
     
     .logo-colors {
@@ -667,6 +657,7 @@
       margin-bottom: 20px;
       padding-left: 30px;
       position: relative;
+      color: var(--text);
     }
     
     .color-item:before {
@@ -682,22 +673,22 @@
     
     .color-blue:before { background: #4A7B9F; }
     .color-red:before { background: #E64A19; }
-    .color-yellow:before { background: #FFC107; }
+    .color-yellow:before { background: #E9F8FF; }
     
     .bible-verse {
-      background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.1));
+      background: linear-gradient(135deg, rgba(233, 248, 255, 0.3), rgba(214, 241, 251, 0.3));
       border-left: 4px solid var(--sunshine-yellow);
       padding: 25px;
       margin: 30px 0;
       border-radius: 8px;
       font-style: italic;
-      color: var(--bible-brown);
+      color: var(--text);
       text-align: center;
     }
     
     .footer {
-      background: linear-gradient(135deg, var(--bible-brown), #5a3921);
-      color: #ecf0f1;
+      background: linear-gradient(135deg, #2b5560, #1b3b42);
+      color: #eefafc;
       padding: 50px 0 20px;
     }
     
@@ -726,43 +717,42 @@
       margin-top: 20px;
     }
     
-    
     @media (max-width:1100px){
-  .hamburger{display:flex;}
-  .navbar-menu{
-    position:fixed;
-    top:64px;
-    right:0;
-    width:320px;
-    max-width:80%;
-    height:calc(100vh - 64px);
-    background:rgba(255,255,255,0.98);
-    flex-direction:column;
-    align-items:flex-start;
-    padding:16px;
-    gap:0;
-    transform:translateX(100%);
-    transition:transform 0.28s ease;
-    box-shadow: -8px 0 30px rgba(0,0,0,0.08);
-  }
-  .navbar-menu.open{transform:translateX(0);}
-  .nav-item{width:100%;}
-  .nav-link{width:100%;padding:12px 16px;border-radius:6px;}
-  .dropdown-menu{
-    position:static;
-    opacity:1;
-    visibility:visible;
-    transform:none;
-    box-shadow:none;
-    padding-left:12px;
-    max-height:0;
-    overflow:hidden;
-    transition:max-height 0.28s ease;
-  }
-  .dropdown-menu.open{max-height:800px;}
-  .nav-item.has-dropdown > .nav-link .caret{float:right;transform:rotate(0);transition:transform .2s;}
-  .nav-item.has-dropdown.open > .nav-link .caret{transform:rotate(180deg);}
-}
+      .hamburger{display:flex;}
+      .navbar-menu{
+        position:fixed;
+        top:64px;
+        right:0;
+        width:320px;
+        max-width:80%;
+        height:calc(100vh - 64px);
+        background:rgba(255,255,255,0.98);
+        flex-direction:column;
+        align-items:flex-start;
+        padding:16px;
+        gap:0;
+        transform:translateX(100%);
+        transition:transform 0.28s ease;
+        box-shadow: -8px 0 30px rgba(0,0,0,0.08);
+      }
+      .navbar-menu.open{transform:translateX(0);}
+      .nav-item{width:100%;}
+      .nav-link{width:100%;padding:12px 16px;border-radius:6px;}
+      .dropdown-menu{
+        position:static;
+        opacity:1;
+        visibility:visible;
+        transform:none;
+        box-shadow:none;
+        padding-left:12px;
+        max-height:0;
+        overflow:hidden;
+        transition:max-height 0.28s ease;
+      }
+      .dropdown-menu.open{max-height:800px;}
+      .nav-item.has-dropdown > .nav-link .caret{float:right;transform:rotate(0);transition:transform .2s;}
+      .nav-item.has-dropdown.open > .nav-link .caret{transform:rotate(180deg);}
+    }
     
     @media (max-width: 768px) {
       .hero {
@@ -811,7 +801,6 @@
       }
     }
     
-    
     .section, .category-card, .method-card, .support-card, .donation-process {
       opacity: 1 !important;
       visibility: visible !important;
@@ -819,7 +808,6 @@
       transform: none !important;
       overflow: visible !important;
     }
-    
     
     @media (max-width: 1200px) and (min-width: 1100px) {
       .container {
@@ -837,7 +825,6 @@
       }
     }
     
-    
     @media (max-width: 1100px) and (min-width: 768px) {
       .donation-categories,
       .donation-methods,
@@ -849,7 +836,6 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
-    
     
     @media (max-width: 767px) {
       .donation-categories,
@@ -866,21 +852,20 @@
       .donation-process {
         padding: 30px 15px;
       }
+      
       .hero{ 
         padding:40px 16px; 
         min-height:220px; 
         background-position:center; 
       }  
+      
       .hero-title{ 
         font-size:1.6rem 
       }
-
-
-      }  
+    }  
       
     @media (min-width: 1100px) {
       .navbar-container {
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -892,10 +877,9 @@
         gap: 8px;
       }
 
-      
       .navbar-menu .nav-item { margin: 0 6px; }
     }
-      </style>
+</style>
 </head>
 <body>
   
